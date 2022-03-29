@@ -1,9 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.allodocc.UserProfil">
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:rotation="-360">
+
+    <TextView
+        android:id="@+id/Salut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:width="230dp"
+        android:text="Salut Ahmed"
+        android:textSize="40dp"
+        android:textStyle="italic|bold" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/Salut"
+        android:src="@mipmap/ic_launcher_round"
+
+
+        />
+    <Button
+        android:id="@+id/changer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="580dp"
+        android:width="140dp"
+        android:backgroundTint="@color/teal_700"
+        android:padding="10dp"
+        android:text="Save" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:text="Nom Complet  : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditFULLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="190dp"
+        android:width="250dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:minHeight="48dp"
+        android:text=""
+        android:hint="Full Name"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="280dp"
+        android:text="EmaiL  : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="270dp"
+        android:width="250dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:text=""
+        android:hint="Your email"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="360dp"
+        android:text="N° Telephone  : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="360dp"
+        android:width="250dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:text=""
+        android:hint="Your Phone"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="420dp"
+        android:text=" La Ville  : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="420dp"
+        android:width="250dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:text=""
+        android:hint="city"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="480dp"
+        android:text=" Localisation  : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Localisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="470dp"
+        android:width="250dp"
+        android:backgroundTint="@color/teal_700"
+        android:padding="10dp"
+        android:text="Localisation"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="580dp"
+        android:width="140dp"
+        android:backgroundTint="@color/teal_700"
+        android:padding="10dp"
+        android:text="Save" />
+
+    <!--    <Button -->
+    <!--        android:id="@+id/EditLocalisation"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="180dp"-->
+    <!--        android:layout_marginTop="470dp"-->
+    <!--        android:width="250dp"-->
+    <!--        android:background="@drawable/edittext_rounded_corners"-->
+    <!--        android:backgroundTint="@color/purple_700"-->
+    <!--        android:text="Marrakech"-->
+
+    <!--        android:textAlignment="center"-->
+    <!--        android:theme="@style/Button.White" -->
+    <!--        back/>-->
+
+
+</RelativeLayout>

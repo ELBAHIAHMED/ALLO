@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/drawable/edittext_rounded_corners.xml" value="0.246" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1695" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/drawable/round_button.xml" value="0.155" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/drawable/shape_button.xml" value="0.137" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/layout/activity_choix_consultation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/layout/activity_connexion.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/layout/activity_inscription.xml" value="0.2" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/layout/activity_profil.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/layout/activity_user_profil.xml" value="0.264" />
+        <entry key="..\:/Users/EL BAHI/Desktop/GroupIt/ANDROID_APP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1745" />
         <entry key="..\:/Users/User/AndroidStudioProjects/alloDOC/app/src/main/res/drawable/eclipse.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/alloDOC/app/src/main/res/drawable/shape_button.xml" value="0.206" />
         <entry key="..\:/Users/User/AndroidStudioProjects/alloDOC/app/src/main/res/layout/activity_choix_consultation.xml" value="0.2546875" />

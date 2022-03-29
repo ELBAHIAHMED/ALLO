@@ -12,20 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlloDOC">
         <activity
-            android:name=".ChoixConsultation"
-            android:exported="false" />
-        <activity
-            android:name=".inscription"
-            android:exported="false" />
-        <activity
-            android:name=".connexion"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.example.allodocc.UserProfil"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.allodocc.ChoixConsultation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.allodocc.inscription"
+            android:exported="false" />
+        <activity
+            android:name="com.example.allodocc.connexion"
+            android:exported="false" />
+        <activity
+            android:name="com.example.allodocc.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

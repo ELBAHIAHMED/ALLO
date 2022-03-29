@@ -1,15 +1,18 @@
-package com.example.allodoc;
+package com.example.allodocc;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.allodoc.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,6 +26,7 @@ public class ChoixConsultation extends AppCompatActivity {
     FirebaseAuth firebaseAuth ;
     FirebaseFirestore fStore ;
     String userId;
+    ImageButton btnprofil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +35,16 @@ public class ChoixConsultation extends AppCompatActivity {
         email = findViewById(R.id.email);
         firebaseAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+        btnprofil = findViewById(R.id.buttonProfil);
         userId= firebaseAuth.getCurrentUser().getUid();
         FirebaseUser utilisateur = firebaseAuth.getCurrentUser();
+        btnprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),UserProfil.class));
+            }
+        });
+
         //verification de l'adresse mail
         if(!utilisateur.isEmailVerified()){
             email.setVisibility(View.VISIBLE);
